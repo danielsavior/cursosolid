@@ -41,7 +41,6 @@ public class Fatura {
 
 	public void addPagamento(Pagamento pagamento) {		
 		pagamentos.add(pagamento);
-		total = 0;
 		total += pagamento.getValor();
 		setPago(total>=getValor());
 		System.out.println("total>=getValor() " + (total>=getValor()));

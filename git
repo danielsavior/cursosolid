@@ -1,0 +1,17 @@
+adiciona todos arquivos e depois 
+git rm --cached arquivo_que_não_precisa
+
+
+caso tenha feito commit sem ter feito git fetch antes:
+	1 - faça git fetch
+	2 - faça git rebase origin/nome_branch
+	3 - faça git status e verifique que seu ramo foi atualizado
+
+
+
+Merge branch "atual" em "branch_desejado"
+	1- posiciona no branch "atual"
+	git merge --no-ff origin/branch_desejado
+	
+resolver conflitos
+	git mergetool -t kdiff3
